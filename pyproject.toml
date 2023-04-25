@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "poetry-test"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{include = "poetry_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "*"
+
+[tool.poetry.group.nox.dependencies]
+nox = "*"
+
+[tool.poetry.group.fmt.dependencies]
+black = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
