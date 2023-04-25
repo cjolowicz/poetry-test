@@ -17,7 +17,7 @@ def install(session: nox.Session, *, groups: Iterable[str], root: bool = True) -
         root: Install the root package.
     """
     session.run_always(
-        "poetry@1.3.2",
+        "poetry",
         "install",
         "--no-root",
         "--sync",
